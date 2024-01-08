@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suraj Prajapati's Portfolio</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<nav>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#skills">Skills</a>
+		<a href="#contact">Contact</a>
+		<a href="https://portfolio-suraj.netlify.app/">Website</a>
+	</nav>
+	<section id="home">
+
+		<p class="welcome"><img src="assets/welcome.gif" alt=""></p>
+		<h1>Hi, I am <span class="name-highlight">Suraj Prajapati</span></h1>
+
+		<p>I am a passionate web developer proeficient in FrontEnd development using techlonogies
+			like <span class="bold">HTML, CSS, JavaScript and ReactJS</span>. I recently completed my Btech Computer
+			science. I have built several web projects . To know more about my projects go to the portfolio section.
+
+		</p>
+		<button class="portfolio-btn"><a href="#portfolio">Portfolio</a></button>
+	</section>
+
+
+	<section id="skills">
+		<div class="section-wrapper">
+			<h2>My skills</h2>
+			<div class="skills-wrapper">
+				<div class="primary">
+					<p>My Expertise:</p>
+					<div class="skills">
+						<div class="skill"> <img src="/assets/skills/html-5.png" alt="html logo"> HTML</div>
+
+						<div class="skill"> <img src="/assets/skills/css-3.png" alt="css logo"> CSS</div>
+
+						<div class="skill"> <img src="/assets/skills/js.png" alt="js logo"> JavaScript</div>
+
+						<div class="skill"> <img src="/assets/skills/react.png" alt="react logo"> ReactJS</div>
+					</div>
+				</div>
+				<div class="secondary ">
+					<p>Secondary skills:</p>
+					<div class="skills">
+						<div class="skill"> <img src="/assets/skills/bootstrap.png" alt="bootstrap logo"> Bootstrap</div>
+
+						<div class="skill"> <img src="/assets/skills/node-js.png" alt="node logo"> NodeJS</div>
+
+						<div class="skill"> <img src="/assets/skills/firebase.png" alt="firebase logo"> Firebase</div>
+
+						<div class="skill"> <img src="/assets/skills/mongodb.png" alt="mongodb logo"> MongoDB</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="portfolio">
+		<div class="section-wrapper">
+			<h2>Portfolio</h2>
+			<div class="portfolio-wrapper">
+				<div class="portfolio-item">
+					<h3>Sociallies</h3>
+					<a href="https://sociallies2-0.vercel.app/">
+						<img src="/assets/projects/social.png" alt="">
+					</a>
+
+					<p class="description"> It is a scocial media website build on reactjs and firebase. User can create
+						an
+						account using email and can create posts, comments, like and make friends to chat with them in
+						realtime.</p>
+					<p class="tech">Tech stack: <span>HTML</span> <span>CSS</span> <span>ReactJS</span>
+						<span>firebase</span>
+					</p>
+				</div>
+				<div class="portfolio-item">
+					<h3>Player Management System</h3>
+					<a href="https://player-mangement-system.vercel.app/">
+						<img src="/assets/projects/pms.png" alt="player management system image">
+					</a>
+
+					<p class="description">It is a simple admin dashboard on which a user a perform the CRUD operations
+						like
+						creating database, editing, deleting or updating any information in the database.</p>
+					<p class="tech">Tech stack: <span>ReactJS</span> <span>NodeJS</span> <span>expressjs</span>
+						<span>MongoDB</span>
+					</p>
+				</div>
+				<div class="portfolio-item">
+					<h3>Zip File Extractor</h3>
+					<a href="https://zip-extractor-suraj.netlify.app/">
+						<img src="/assets/projects/zip.jpg" alt="zip extractor image">
+					</a>
+					<p class="description">Zip extractor is a website on which any user can extract a zip files. The
+						extractors files will be
+						shown in directories in a tree structure. Download all extracted files or any of the file by
+						clicking on it.</p>
+					<p class="tech">Tech stack: <span>HTML</span> <span>CSS</span> <span>Zip.js</span>
+						<span>JStree</span>
+						<span>JS</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="section-wrapper">
+			<h2>Contact</h2>
+			<form action="#" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Your name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Email address" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" placeholder="What do you want to say?"
+					required></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/*  color variables*/
+:root {
+  --primary: #28bfab;
+  --secondary: #ffb703;
+  --tertiary: #d9f6f9;
+  --extra: #faf4db;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--tertiary);
+}
+
+
+/* all sections styling */
+section {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+section h2 {
+  padding: 20px;
+  margin-top: 40px;
+  color: var(--primary);
+}
+
+
+/* navbar styling */
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* Header/home section styling  */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin-top: 0;
+  background-color: var(--primary);
+}
+
+#home p {
+  margin: 20px auto;
+}
+
+.name-highlight {
+  color: var(--extra);
+}
+
+.welcome img {
+  width: 200px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+/* skills section styling*/
+
+#skills {
+  margin: 20px auto;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px auto;
+
+}
+
+.skills-wrapper p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  background-color: var(--extra);
+  padding: 8px 20px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.skill img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+
+/* portfolio section styling*/
+
+
+#portfolio {
+  width: 100%;
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-btn {
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ffb703;
+  color: white;
+  border: 2px solid #ffb703;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+
+}
+
+.portfolio-btn a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portfolio-btn:hover {
+  background-color: #318890;
+  transform: scale(1.02);
+
+}
+
+.portfolio-btn:hover a {
+  color: white;
+
+}
+
+.portfolio-item h3 {
+  margin: 10px auto;
+}
+
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  width: 400px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.description {
+  margin: 5px auto;
+  font-size: 14px;
+}
+
+.tech {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.tech span {
+  border: 1px solid var(--primary);
+  margin-right: 4px;
+  background-color: var(--tertiary);
+  padding: 2px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* contact form styling*/
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  border: 2px solid var(--primary);
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--secondary);
+  outline: var(--secondary);
+}
+
+
+input[type="submit"] {
+  background-color: var(--secondary);
+  color: black;
+  border: 2px solid var(--secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* responsiveness styling */
+@media only screen and (max-width: 926px) {
+  .welcome img {
+    width: 150px;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 400px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 428px) {
+
+  section {
+    padding: 10px 5px;
+    margin-top: 40px;
+  }
+
+  .skill {
+    width: 300px;
+  }
+}
